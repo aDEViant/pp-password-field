@@ -11,20 +11,76 @@ body {
   background-color: #f4f4f9;
   color: #333;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-main {
+nav {
+  border: 2px solid black;
+  position: fixed;
+  top: 0;
+}
+
+#greetings {
   text-align: center;
+}
+
+main {
+  text-align: left;
   background: #fff;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
 }
 
 h1 {
   color: #2c3e50;
   margin-bottom: 1rem;
+}
+
+.candidate-section {
+  /* border: 2px solid red; */
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.candidate-details {
+  /* border: 2px solid purple; */
+  text-align: left;
+  width: auto;
+}
+
+#candidatPhoto {
+  /* border: 2px solid black; */
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#candidateOccupation {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#candidateName {
+  font-weight: bold;
+}
+
+.password-section {
+  border: 2px solid purple;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.passwordBox {
+  border: 2px solid red;
+  height: 2rem;
+  padding: 1rem;
 }

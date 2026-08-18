@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav>
+      <h1 id="greetings">Hola Amigo!</h1>
+    </nav>
+
     <main>
-      <h1>Welcome to Your New Project</h1>
-      <p>This is a standard boilerplate for HTML, CSS, and JavaScript.</p>
+      <h3>Enter your password</h3>
+
+      <section class="candidate-section">
+        <img
+          src="https://images.pexels.com/photos/35555305/pexels-photo-35555305.jpeg"
+          id="candidatPhoto"
+          alt="Candidate Photo"
+        />
+        <section class="candidate-details">
+          <p id="candidateOccupation">Business Accountant</p>
+          <p id="candidateName">Sarah Bills</p>
+        </section>
+      </section>
+
+      <section class="password-section">
+        <form>
+          <label for="password" id="passwordTitle">Password</label>
+          <div class="passwordBox">
+            <img src="/padlock.png" alt="" />
+          </div>
+        </form>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
